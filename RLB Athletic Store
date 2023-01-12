@@ -1,0 +1,41 @@
+CREATE TABLE rlb_athletic_gear (id integer primary key, name TEXT, color TEXT, size text, training_type text, price INTEGER);
+
+
+INSERT INTO rlb_athletic_gear VALUES 
+(1, "Matching Work Out Sets", "Blue", "S-XL","HITT", 19.99);
+INSERT INTO rlb_athletic_gear VALUES
+(2, "Tennis Shoes", "Yellow", "6-11", "Running", 29.99);
+INSERT INTO rlb_athletic_gear VALUES
+(3, "Tennis Shoes", "Red", "6-11", "Weight- training", 25.99);
+INSERT INTO rlb_athletic_gear VALUES
+(4, "3/4 Leggings w/ pockets", "Muli-color", "XS-XL", "Cross-training", 21.99);
+INSERT INTO rlb_athletic_gear VALUES
+(5, "Capri leggings w/ pockets", "Red, Purple, Pink", "XS-XL", "Cross-training", 16.99);
+INSERT INTO rlb_athletic_gear VALUES
+(6, "3/4 Leggings w/o pockets", "Multi-color", "XS-XL", "Cross-training", 20.99);
+INSERT INTO rlb_athletic_gear VALUES
+(7, "Capri leggings w/o pockets", "Red, Purple, Pink", "XS-XL", "Cross-training", 18.99);
+INSERT INTO rlb_athletic_gear VALUES
+(8, "Moisture-wicking T-shirt", "Black, White", "S-L", "HITT", 14.99);
+INSERT INTO rlb_athletic_gear VALUES
+(9, "Moisture-wicking Tank Top", "Gray, Blue", "S-L", "HITT", 13.99);
+INSERT INTO rlb_athletic_gear VALUES
+(10, "Support Shoes", "Black, Red, Blue", "6-11", "Weight-training", 36.99);
+INSERT INTO rlb_athletic_gear VALUES
+(11, "Ankle Socks", "White", "6-11", "NA", 12.99);
+INSERT INTO rlb_athletic_gear VALUES
+(12, "Resistance band", "Black", "Easy", "Pilates", 9.99);
+INSERT INTO rlb_athletic_gear VALUES
+(13, "Resistance band", "Gray", "Hard", "Pilates", 9.99);
+INSERT INTO rlb_athletic_gear VALUES
+(14, "Sweat bands", "Multi-color", "One-size", "Cross-training", 6.99);
+INSERT INTO rlb_athletic_gear VALUES
+(15, "Weight gloves", "Black", "One-size", "Weight- training", 11.99);
+
+SELECT *
+FROM rlb_athletic_gear
+ORDER BY price;
+
+SELECT *
+FROM rlb_athletic_gear
+WHERE training_type = "Cross-training";
